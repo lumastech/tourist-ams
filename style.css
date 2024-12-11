@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    color: black;
+    background: white;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/*header*/
+header .content{
+    position: fixed;
+    top: -20px;
+    width: 100%;
+    height: 15%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(31, 31, 58, 0.79);
+    padding: 10px 10%;
+    transition: ease 0.4s;
+    margin-top: 10px;
+}
+.content img{
+    width: 150px;
+    height: 150px;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+nav ul a {
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease 0.4s;
+    color: white;
+}
+.header-btn .Sign-up, .Log-in {
+    border: 1px solid white;
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+}
+nav ul button, .Sign-up:hover{
+    padding: 14px 21px;
+    border: 4px solid;
+    transition: 0.3s ease;
+}
+nav ul button, .Log-in:hover{
+    background: white;
+    color: rgba(12, 16, 89, 0.53);
+    transition: 0.3s ease;
+}
+.home{
+    padding: 0 30%;
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    background-image: url("home_slider.jpg");
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    align-items: center;
+}
+.home-text{
+    margin-top: 98px;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    height: 77vh;
+}
+.home-text h1{
+    line-height: 1.2;
+    color: white;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+
+}
+.home-text p{
+    padding: 15px;
+    color: #ffffffbf;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+.home-text button{
+    border: 1px solid white;
+    padding: 8px 10px;
+    background: rgba(12, 71, 89, 0.35);;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.home-text button:hover{
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+/* #TOUR SEARCH*/
+.tour-search {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: hsl(214, 51%, 29%);
+    padding-block: 15px;
+}
+
+.tour-search-form .input-label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tour-search-form .input-field {
+    background: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 2px solid white;
+    margin-bottom: -10px;
+}
+
+
+.tour-search-form .input-field::placeholder { color:hsl(0, 0%, 60%); }
+
+.tour-search-form .input-field:after {
+  color: hsl(0, 0%, 60%);
+  text-transform: uppercase;
+}
+
+.tour-search-form .input-wrapper { margin-bottom: 10px; }
+
+.tour-search .btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    margin-top: 35px;
+    padding: 8px 13px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.tour-search .btn:hover{
+    background: white;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+    color: steelblue;
+}

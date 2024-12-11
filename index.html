@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BonVoyage Project">
+    <title>BonVoyage | Attractions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Paytone One', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header Section -->
+    <div class="header-home">
+        <header class="bg-white shadow ">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+                <img src="logo.png" alt="logo" class="h-12">
+                <div>
+                    <button id="menu-toggle" class="block md:hidden text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <nav id="navbar"
+                        class="hidden md:flex space-x-6 text-lg md:static absolute bg-white  w-ful md:w-auto shadow md:shadow-none z-10 -translate-x-full md:translate-x-0">
+                        <ul class="flex flex-col md:flex-row md:space-x-6">
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500 block px-4 py-2">Home</a></li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500 block px-4 py-2">Ticket Booking</a>
+                            </li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500 block px-4 py-2">Facilities</a>
+                            </li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500 block px-4 py-2">Analytics</a></li>
+                            <li><a href="#" class="text-gray-800 hover:text-blue-500 block px-4 py-2">Feedback</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="bg-cover bg-center h-screen" style="background-image: url('home_slider.jpg');">
+            <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+                <div class="text-center text-white">
+                    <h1 class="text-5xl font-bold mb-4">Experience the<br>World-Class<br>Attractions</h1>
+                    <p class="text-xl mb-6">ELEVATE YOUR TRAVEL JOURNEY<br>and<br>MEMORIES.</p>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book A Trip
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tour Search Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <form action="" class="bg-white shadow rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="destination" class="block text-sm font-medium text-gray-700">Search Destination*</label>
+                    <input type="text" name="destination" id="destination" placeholder="Enter Destination"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="people" class="block text-sm font-medium text-gray-700">Pax Number*</label>
+                    <input type="number" name="people" id="people" placeholder="No. of People"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="checkin" class="block text-sm font-medium text-gray-700">Check-in Date*</label>
+                    <input type="date" name="checkin" id="checkin"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="checkout" class="block text-sm font-medium text-gray-700">Check-out Date*</label>
+                    <input type="date" name="checkout" id="checkout"
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div class="col-span-1 md:col-span-2 text-center">
+                    <button type="submit"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Inquire
+                        Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Tourist Gallery Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Tourist Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery1.jpg" alt="Gallery 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery2.jpg" alt="Gallery 2" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery3.jpg" alt="Gallery 3" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery4.jpg" alt="Gallery 4" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery5.jpg" alt="Gallery 5" class="w-full h-64 object-cover">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="gallery6.jpg" alt="Gallery 6" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-white">
+            <p>&copy; 2024 BonVoyage. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
