@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | BonVoyage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <img src="logo.png" alt="logo" class="h-12">
+            <div>
+                <button id="menu-toggle" class="block md:hidden text-gray-800 focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <nav id="navbar"
+                    class="hidden md:flex space-x-6 text-lg md:static absolute bg-white  w-ful md:w-auto shadow md:shadow-none z-10 -translate-x-full md:translate-x-0">
+                    <ul>
+                        <li><a href="/pages/admin/dashboard.html"
+                                class="px-4 text-gray-800 hover:text-blue-500">Dashboard</a>
+                        </li>
+                        <li><a href="/pages/admin/ticket-booking.html"
+                                class="px-4 text-gray-800 hover:text-blue-500">Tickets</a></li>
+                        <li><a href="/pages/admin/facilities.html"
+                                class="px-4 text-gray-800 hover:text-blue-500">Facilities</a>
+                        </li>
+                        <li><a href="/pages/admin/feedback.html" class="px-4 text-gray-800 hover:text-blue-500">Feedback</a>
+                        </li>
+                        <li><a href="/pages/admin/employees.html"
+                                class="px-4 text-gray-800 hover:text-blue-500">Employees</a></li>
+                        <li><a href="/" class="px-4 text-gray-800 hover:text-blue-500">Website</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="py-12">
+        <!-- Booking Table Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Booking Details</h1>
+                <p class="text-center text-gray-600 mb-8">Below are the booking details entered by customers.</p>
+
+                <!-- Booking Table -->
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white shadow rounded-lg">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="py-3 px-6 text-left">Destination</th>
+                                <th class="py-3 px-6 text-left">Number of People</th>
+                                <th class="py-3 px-6 text-left">Check-in Date</th>
+                                <th class="py-3 px-6 text-left">Check-out Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Example Booking Entry -->
+                            <tr class="border-b">
+                                <td class="py-3 px-6">Paris</td>
+                                <td class="py-3 px-6">2</td>
+                                <td class="py-3 px-6">2024-12-25</td>
+                                <td class="py-3 px-6">2024-12-30</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-6">London</td>
+                                <td class="py-3 px-6">4</td>
+                                <td class="py-3 px-6">2024-12-20</td>
+                                <td class="py-3 px-6">2024-12-27</td>
+                            </tr><tr class="border-b">
+                                <td class="py-3 px-6">Paris</td>
+                                <td class="py-3 px-6">2</td>
+                                <td class="py-3 px-6">2024-12-25</td>
+                                <td class="py-3 px-6">2024-12-30</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-6">London</td>
+                                <td class="py-3 px-6">4</td>
+                                <td class="py-3 px-6">2024-12-20</td>
+                                <td class="py-3 px-6">2024-12-27</td>
+                            </tr><tr class="border-b">
+                                <td class="py-3 px-6">Paris</td>
+                                <td class="py-3 px-6">2</td>
+                                <td class="py-3 px-6">2024-12-25</td>
+                                <td class="py-3 px-6">2024-12-30</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-6">London</td>
+                                <td class="py-3 px-6">4</td>
+                                <td class="py-3 px-6">2024-12-20</td>
+                                <td class="py-3 px-6">2024-12-27</td>
+                            </tr><tr class="border-b">
+                                <td class="py-3 px-6">Paris</td>
+                                <td class="py-3 px-6">2</td>
+                                <td class="py-3 px-6">2024-12-25</td>
+                                <td class="py-3 px-6">2024-12-30</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-6">London</td>
+                                <td class="py-3 px-6">4</td>
+                                <td class="py-3 px-6">2024-12-20</td>
+                                <td class="py-3 px-6">2024-12-27</td>
+                            </tr><tr class="border-b">
+                                <td class="py-3 px-6">Paris</td>
+                                <td class="py-3 px-6">2</td>
+                                <td class="py-3 px-6">2024-12-25</td>
+                                <td class="py-3 px-6">2024-12-30</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-6">London</td>
+                                <td class="py-3 px-6">4</td>
+                                <td class="py-3 px-6">2024-12-20</td>
+                                <td class="py-3 px-6">2024-12-27</td>
+                            </tr>
+                            <!-- Additional rows can be added dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-white">
+            <p>&copy; 2024 BonVoyage. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
