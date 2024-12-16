@@ -39,10 +39,43 @@
 
     <!-- Content -->
     <main class="py-12">
-        <div class="container mx-auto px-6">
-            <h1 class="text-3xl font-bold mb-6">Ticket Booking</h1>
-            <p class="text-gray-700">This is a placeholder page for ticket booking. Add relevant content here.</p>
-        </div>
+        <!-- Ticket Booking Form Section -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Book Your Tickets</h1>
+                <p class="text-center text-gray-600 mb-8">Plan your visit to our attractions and book your tickets in advance!
+                </p>
+        
+                <form action="#" method="POST" class="bg-white shadow rounded-lg p-6 max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="destination" class="block text-sm font-medium text-gray-700">Destination*</label>
+                        <input type="text" id="destination" name="destination" placeholder="Enter Destination" required
+                            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="people" class="block text-sm font-medium text-gray-700">Number of People*</label>
+                        <input type="number" id="people" name="people" placeholder="Number of People" required
+                            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="checkin" class="block text-sm font-medium text-gray-700">Check-in Date*</label>
+                        <input type="date" id="checkin" name="checkin" required
+                            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+        
+                    <div class="mb-4">
+                        <label for="checkout" class="block text-sm font-medium text-gray-700">Check-out Date*</label>
+                        <input type="date" id="checkout" name="checkout" required
+                            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+        
+                    <button type="submit"
+                        class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Book Now</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section -->
